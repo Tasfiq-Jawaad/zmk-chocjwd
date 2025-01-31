@@ -134,9 +134,9 @@
 
 		right_layer {
 		bindings = <
-		&trans    &kp ESC    &kp C_PP    &kp C_PREV      &kp C_NEXT      &kp LS(MINUS)    		                        &kp MINUS    &kp N7    &kp N8    &kp N9    &trans       &trans &trans 
-		&trans    &kp TAB    &trans      &kp C_VOL_DN    &kp C_VOL_UP    &kp LS(EQUAL) 			                        &kp EQUAL    &kp N4    &kp N5    &kp N6    &kp ENTER    &trans &trans 
-		&trans    &to 4      &kp AMPS    &kp SLASH       &kp STAR        &kp DOT    			                        &kp N0       &kp N1    &kp N2    &kp N3    &trans       &trans &trans 
+		&trans    &kp ESC    &kp C_PP    &kp C_PREV      &kp C_NEXT      &kp LS(MINUS)    		                        &kp MINUS    &kp N7    &kp N8    &kp N9    &trans       &trans 
+		&trans    &kp TAB    &trans      &kp C_VOL_DN    &kp C_VOL_UP    &kp LS(EQUAL) 			                        &kp EQUAL    &kp N4    &kp N5    &kp N6    &kp ENTER    &trans 
+		&trans    &to 4      &kp AMPS    &kp SLASH       &kp STAR        &kp DOT    			                        &kp N0       &kp N1    &kp N2    &kp N3    &trans       &trans 
 					                        &to 0    &sk LGUI    &kp SPACE                                          &kp RET	   &sk RALT    &to 4 
 		>;
 		};
