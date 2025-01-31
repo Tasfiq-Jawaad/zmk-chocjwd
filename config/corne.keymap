@@ -153,7 +153,7 @@
 		bindings = <
 		&none &none  &none &none &none &none                                                     &none &none &none &none &none &none
 		&none &none  &none &none &none &none                                                     &none &none &none &none &none &none
-		&none &bt BT_PRV  &bt BT_NXT &bt BT_CLR &bootloader &none   				        &none &none  &none  &none &none   &none
+		&none &bt BT_PRV  &bt BT_NXT &bt BT_CLR &bootloader &none   				        &none &bootloader  &none  &none &none   &none
 					 &to 0 &none &none   					&none &none &to 1 
 		>;
 		};	
