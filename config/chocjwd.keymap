@@ -140,7 +140,7 @@
 					                        &to 0    &sk LGUI    &kp SPACE                                          &kp RET	   &sk RALT    &to 4 
 		>;
 		};
-
+							 
 		tri_layer {
 		bindings = <
 		&trans    &trans                 &msc SCRL_LEFT    &mmv MOVE_UP      &msc SCRL_RIGHT    &kp NUM_5 			&kp LG(LBKT)   &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(RBKT) &trans &trans
