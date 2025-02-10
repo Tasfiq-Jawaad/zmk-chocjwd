@@ -130,7 +130,7 @@
 
         ethhash: e_thhash {
             compatible = "zmk,behavior-hold-tap";
-            label = "W_TWO_AT_MOD";
+            label = "E_THREE_HASH_MOD";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
@@ -140,7 +140,7 @@
 
         rfodllr: r_fodllr {
             compatible = "zmk,behavior-hold-tap";
-            label = "W_TWO_AT_MOD";
+            label = "R_FOUR_DOLLAR_MOD";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
@@ -150,7 +150,7 @@
 
         tfiper: t_fiper {
             compatible = "zmk,behavior-hold-tap";
-            label = "W_TWO_AT_MOD";
+            label = "T_FIVE_PERCENT_MOD";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
@@ -160,7 +160,7 @@
 
         ysicar: y_sicar {
             compatible = "zmk,behavior-hold-tap";
-            label = "W_TWO_AT_MOD";
+            label = "Y_SIX_CARET_MOD";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
@@ -170,7 +170,7 @@
 
         useamp: u_seamp {
             compatible = "zmk,behavior-hold-tap";
-            label = "W_TWO_AT_MOD";
+            label = "U_SEVEN_AMPERSAND_MOD";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
@@ -180,7 +180,7 @@
 
         ieast: i_east {
             compatible = "zmk,behavior-hold-tap";
-            label = "W_TWO_AT_MOD";
+            label = "I_EIGHT_ASTERISK_MOD";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
@@ -190,7 +190,7 @@
 
         onlpar: o_nlpar {
             compatible = "zmk,behavior-hold-tap";
-            label = "W_TWO_AT_MOD";
+            label = "O_NINE_LEFT_PAR_MOD";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
@@ -200,7 +200,7 @@
 
         pzrpar: p_zrpar {
             compatible = "zmk,behavior-hold-tap";
-            label = "W_TWO_AT_MOD";
+            label = "P_ZERO_RIGHT_PAR_MOD";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
