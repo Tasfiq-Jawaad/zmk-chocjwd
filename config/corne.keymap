@@ -224,29 +224,29 @@
             
     	default_layer {
             // -----------------------------------------------------------------------------------------
-            // | none |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | none |
+            // | none |1 Q !|2 W @|3 E #|4 R $|5 T %|   |6 Y ^|7 U  &|8 I *|9 O (|0 P )| none |
             // | none |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | none |
             // | none |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | none |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            //                    | LST | GUI | SPC |   | ENT | BSPC | TO |
 			bindings = <
-				&none    &qoexcl 1 Q    &wtwat 2 W    &ethhash 3 E         &rfodllr 4 R         &tfiper 5 T 				&ysicar 6 Y    &useamp 7 U         &ieast 8 I         &onlpar 9 O      &pzrpar 0 P       &none
-				&none    &kp A    &kp S    &hm LALT D    &hm LCTRL F    &kp G 			       	&kp H    &hm RCTRL J    &hm RALT K    &kp L      &kp SEMI    &none
-				&none    &kp Z    &kp X    &kp C         &kp V         &kp B				&kp N    &kp M         &kp COMMA     &kp DOT    &kp FSLH    &none
-    			  			         &sk LSHIFT    &sk LGUI    &kp SPACE                           &kp RET  &kp BACKSPACE    &to 1
+				&none    &qoexcl 1 Q    &wtwat 2 W    &ethhash 3 E    &rfodllr 4 R    &tfiper 5 T 				&ysicar 6 Y    &useamp 7 U    &ieast 8 I    &onlpar 9 O    &pzrpar 0 P    &none
+				&none    &kp A          &kp S         &hm LALT D      &hm LCTRL F     &kp G 			       	&kp H          &hm RCTRL J    &hm RALT K    &kp L          &kp SEMI       &none
+				&none    &kp Z          &kp X         &kp C           &kp V           &kp B				        &kp N          &kp M          &kp COMMA     &kp DOT        &kp FSLH       &none
+    			  			                                  &sk LSHIFT    &sk LGUI    &kp SPACE               &kp RET    &kp BACKSPACE    &to 1
 			>;
 		};
 
     	left_layer {
             // -----------------------------------------------------------------------------------------
-            // | none |  ESC  |  @  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | none |
-            // | none |  TAB  |  =  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | none |
-            // | none |   ~   |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | none |
+            // | none |  ESC  |  @  |  *  |  $  |  %  |   |  ^  |  <   |  >  |  ;  | BSPC | none |
+            // | none |  TAB  |  =  |  *  |  *  |  '  |   |  \  |  {   |  }  |  |  | RET  | none |
+            // | none |   ~   |ALT 3|  *  |  *  |  "  |   |  [  |  (   |  )  |  ]  | TO3  | none |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 			bindings = <
-				&none    &kp ESC      &kp AT        &td LC(LG(LS(N4))) LS(N3)    &kp DLLR            &kp PRCNT		                &kp CARET    &kp LS(COMMA)    &kp LS(DOT)    &kp SEMI    &kp BKSP    &none
-				&none    &kp TAB      &kp EQUAL     &kp LA(RBKT)                 &kp LA(LS(RBKT))    &kp SQT 		                &kp BSLH     &kp LBRC         &kp RBRC       &kp PIPE    &kp ENTER   &none
-				&none    &kp TILDE    &kp LA(N3)    &kp LA(LBKT)                 &kp LA(LS(LBKT))    &kp DQT                           &kp LBKT     &kp LPRN         &kp RPRN       &kp RBKT    &to 3       &none
-							                                        &to 0    &sk LGUI    &kp SPACE                           &kp RET    &sk RALT    &to 2 
+				&none    &kp ESC      &kp AT        &kp HASH        &kp DLLR            &kp PRCNT		                &kp CARET    &kp ASTERISK      &kp UP_ARROW      &kp MINUS          &kp PLUS    &none
+				&none    &kp TAB      &kp EQUAL     &kp LA(RBKT)    &kp LA(LS(RBKT))    &kp SQT 		                &kp BSLH     &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW    &kp ENTER   &none
+				&none    &kp TILDE    &kp LA(N3)    &kp LA(LBKT)    &kp LA(LS(LBKT))    &kp DQT                         &kp LBKT     &kp LPRN          &kp RPRN          &kp RBKT           &to 3       &none
+							                                      &to 0    &sk LGUI    &kp LSHIFT                       &kp RET    &sk BACKSPACE    &to 2 
 			>;
 		};
 	
@@ -264,16 +264,16 @@
 				&none    &none                 &msc SCRL_LEFT    &mmv MOVE_UP      &msc SCRL_RIGHT    &kp NUM_5 			&kp LG(LBKT)   &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(RBKT) &none &none
 				&none    &kp F1                 &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT    &kp DEL  						&kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER  &none
 				&none    &td LG(GRAVE) GRAVE    &mkp LCLK         &msc SCRL_UP      &msc SCRL_DOWN     &mkp RCLK   				&mkp LCLK &kp PG_DN  &kp K_VOL_DN  &none &none    &none
-							 &to 0 &none &none  					&none &sk RALT &to 1 
+							 &to 0 &none &none  					&none &sk RALT &none
 			>;
 		};
 		
 		bt_layer {
 			bindings = <
-				&none    &none         &none         &none         &none          &none 								&none    &none          &none    &none    &none    &none
-				&none    &none         &none         &none         &none          &none  								&none    &none          &none    &none    &none    &none
-				&none    &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &bootloader    &none   								&none    &bootloader    &none    &none    &none    &none
-							 									&to 0    &none    &none  					            &none    &none    &to 1 
+				&none    &none    &none         &none         &none         &none           								&none          &none    &none    &none    &none    &none
+				&none    &none    &none         &none         &none         &none            								&none          &none    &none    &none    &none    &none
+				&none    &none    &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &bootloader       								&bootloader    &none    &none    &none    &none    &none
+							 									&to 0    &none    &none  					            &none    &none    &none
 			>;
 		};	
 	};
