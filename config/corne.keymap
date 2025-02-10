@@ -52,6 +52,62 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+		thhash: three_hash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_3>, <&kp HASH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+		fodllr: four_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_4>, <&kp DOLLAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        fiper: five_percent {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_5>, <&kp PERCENT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sicar: six_caret {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_6>, <&kp CARET>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        seamp: seven_ampersand {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_7>, <&kp AMPERSAND>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        east: eight_asterisk {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_8>, <&kp ASTERISK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nlpar: nine_left_parenthesis {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_9>, <&kp LEFT_PARENTHESIS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        zrpar: zero_right_parenthesis {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_0>, <&kp RIGHT_PARENTHESIS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
 		qoexcl: q_oexcl {
             compatible = "zmk,behavior-hold-tap";
             label = "Q_ONE_EXCL_MOD";
@@ -70,6 +126,86 @@
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&twat>, <&kp>;
+        };
+
+        ethhash: e_thhash {
+            compatible = "zmk,behavior-hold-tap";
+            label = "W_TWO_AT_MOD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&thhash>, <&kp>;
+        };
+
+        rfodllr: r_fodllr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "W_TWO_AT_MOD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&fodllr>, <&kp>;
+        };
+
+        tfiper: t_fiper {
+            compatible = "zmk,behavior-hold-tap";
+            label = "W_TWO_AT_MOD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&fiper>, <&kp>;
+        };
+
+        ysicar: y_sicar {
+            compatible = "zmk,behavior-hold-tap";
+            label = "W_TWO_AT_MOD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&sicar>, <&kp>;
+        };
+
+        useamp: u_seamp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "W_TWO_AT_MOD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&seamp>, <&kp>;
+        };
+
+        ieast: i_east {
+            compatible = "zmk,behavior-hold-tap";
+            label = "W_TWO_AT_MOD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&east>, <&kp>;
+        };
+
+        onlpar: o_nlpar {
+            compatible = "zmk,behavior-hold-tap";
+            label = "W_TWO_AT_MOD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&nlpar>, <&kp>;
+        };
+
+        pzrpar: p_zrpar {
+            compatible = "zmk,behavior-hold-tap";
+            label = "W_TWO_AT_MOD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&zrpar>, <&kp>;
         };
 		
 		td: tapdance {
@@ -93,7 +229,7 @@
             // | none |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | none |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 			bindings = <
-				&none    &qoexcl C Q    &wtwat C W    &kp E         &kp R         &kp T 				&kp Y    &kp U         &kp I         &kp O      &kp P       &none
+				&none    &qoexcl 1 Q    &wtwat 2 W    &ethhash 3 E         &rfodllr 4 R         &tfiper 5 T 				&ysicar 6 Y    &useamp 7 U         &ieast 8 I         &onlpar 9 O      &pzrpar 0 P       &none
 				&none    &kp A    &kp S    &hm LALT D    &hm LCTRL F    &kp G 			       	&kp H    &hm RCTRL J    &hm RALT K    &kp L      &kp SEMI    &none
 				&none    &kp Z    &kp X    &kp C         &kp V         &kp B				&kp N    &kp M         &kp COMMA     &kp DOT    &kp FSLH    &none
     			  			         &sk LSHIFT    &sk LGUI    &kp SPACE                           &kp RET  &kp BACKSPACE    &to 1
